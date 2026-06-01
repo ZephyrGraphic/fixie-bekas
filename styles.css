@@ -1228,6 +1228,141 @@ h1 {
   padding: 20px;
 }
 
+.ux-section {
+  background:
+    linear-gradient(135deg, rgba(255, 82, 124, 0.1), rgba(0, 142, 230, 0.08)),
+    var(--paper);
+}
+
+.persona-grid,
+.rationale-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.persona-card,
+.rationale-card {
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.persona-card span {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0 13px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
+  background: var(--bar-pink);
+}
+
+.persona-card h3,
+.rationale-card h3 {
+  margin-top: 38px;
+  font-size: 28px;
+  font-weight: 950;
+}
+
+.persona-card p,
+.persona-card small,
+.rationale-card p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.persona-card small {
+  display: block;
+  border-left: 4px solid var(--frame-maroon);
+  margin-top: 18px;
+  padding-left: 14px;
+}
+
+.flow-study-section,
+.evaluation-section {
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(255, 82, 124, 0.14) 0 22%, transparent 22% 100%),
+    linear-gradient(315deg, rgba(0, 142, 230, 0.2) 0 18%, transparent 18% 100%),
+    var(--ink);
+}
+
+.ux-flow-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ux-flow-list li {
+  min-height: 220px;
+  border: 3px solid rgba(255, 255, 255, 0.82);
+  border-radius: 8px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ux-flow-list span {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border: 2px solid var(--bar-pink);
+  border-radius: 999px;
+  padding: 0 13px;
+  color: var(--bar-pink);
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.ux-flow-list p {
+  margin: 58px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.evaluation-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  border: 3px solid rgba(255, 255, 255, 0.82);
+}
+
+.evaluation-list div {
+  min-height: 190px;
+  border-right: 3px solid rgba(255, 255, 255, 0.82);
+  padding: 22px;
+}
+
+.evaluation-list div:last-child {
+  border-right: 0;
+}
+
+.evaluation-list dt {
+  color: var(--bar-pink);
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.evaluation-list dd {
+  margin: 62px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
 .project-feature-list {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1380,6 +1515,13 @@ h1 {
 
   .quick-strip,
   .feature-grid,
+  .project-hero,
+  .project-info-grid,
+  .project-split-section,
+  .project-feature-list,
+  .tech-list,
+  .seo-page-layout,
+  .optimization-list,
   .story-layout,
   .story-card-grid,
   .showcase-stats,
@@ -1387,6 +1529,10 @@ h1 {
   .project-layout,
   .project-card-grid,
   .seo-win-grid,
+  .persona-grid,
+  .rationale-grid,
+  .ux-flow-list,
+  .evaluation-list,
   .condition-band,
   .condition-grid,
   .flow-list,
@@ -1405,6 +1551,28 @@ h1 {
 
   .section {
     padding: 70px 5vw;
+  }
+
+  .project-hero,
+  .project-page-section {
+    padding: 70px 5vw;
+  }
+
+  .project-hero-copy {
+    min-height: auto;
+  }
+
+  .project-hero h1 {
+    max-width: 100%;
+    font-size: 46px;
+  }
+
+  .project-hero-media {
+    min-height: 360px;
+  }
+
+  .project-page-heading h2 {
+    font-size: 38px;
   }
 
   .condition-details {
@@ -1438,6 +1606,27 @@ h1 {
 
   .seo-score-card strong {
     font-size: 72px;
+  }
+
+  .evaluation-list div,
+  .evaluation-list div:last-child {
+    border-right: 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.82);
+  }
+
+  .evaluation-list div:last-child {
+    border-bottom: 0;
+  }
+
+  .tech-list div,
+  .tech-list div:nth-child(3n),
+  .tech-list div:nth-last-child(-n + 3) {
+    border-right: 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.82);
+  }
+
+  .tech-list div:last-child {
+    border-bottom: 0;
   }
 
   .gallery-main {
@@ -1531,11 +1720,67 @@ h1 {
     padding: 58px 16px;
   }
 
+  .project-hero,
+  .project-page-section {
+    padding: 58px 16px;
+  }
+
   .section-heading h2,
   .story-copy h2,
   .condition-band h2,
   .final-cta h2 {
     font-size: 31px;
+  }
+
+  .project-hero {
+    gap: 22px;
+  }
+
+  .project-hero h1 {
+    font-size: 38px;
+  }
+
+  .project-hero-copy p:not(.eyebrow) {
+    font-size: 16px;
+  }
+
+  .project-hero-media {
+    min-height: 280px;
+    box-shadow: 5px 5px 0 var(--bar-pink);
+  }
+
+  .project-hero-media figcaption {
+    border-radius: 8px;
+    line-height: 1.35;
+  }
+
+  .project-page-heading h2 {
+    font-size: 31px;
+  }
+
+  .project-info-card,
+  .persona-card,
+  .rationale-card,
+  .project-feature-list p,
+  .project-list li,
+  .optimization-list p {
+    padding: 20px;
+  }
+
+  .project-info-card {
+    min-height: 190px;
+  }
+
+  .project-info-card h3 {
+    font-size: 24px;
+  }
+
+  .project-info-card p {
+    margin-top: 36px;
+  }
+
+  .tech-list dd {
+    font-size: 22px;
   }
 
   .hero-dashboard {
@@ -1576,6 +1821,17 @@ h1 {
 
   .seo-win-card strong {
     font-size: 30px;
+  }
+
+  .persona-card h3,
+  .rationale-card h3 {
+    margin-top: 32px;
+    font-size: 24px;
+  }
+
+  .ux-flow-list p,
+  .evaluation-list dd {
+    margin-top: 34px;
   }
 
   .feature-card,

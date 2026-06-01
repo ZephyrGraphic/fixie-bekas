@@ -12,7 +12,7 @@ Production:
 https://fixie-bekas.vercel.app/
 ```
 
-Halaman penjelasan proyek untuk dosen/presentasi:
+Halaman penjelasan proyek untuk dosen/presentasi UI/UX:
 
 ```txt
 https://fixie-bekas.vercel.app/tentang-proyek
@@ -54,7 +54,7 @@ Kai Fixie
 app/
   layout.jsx              # metadata, SEO, icon, manifest reference
   page.jsx                # landing page UI
-  tentang-proyek/page.jsx # halaman penjelasan proyek untuk presentasi
+  tentang-proyek/page.jsx # halaman case study UI/UX untuk presentasi
   manifest.js             # web app manifest route
   robots.js               # robots.txt route
   sitemap.js              # sitemap.xml route

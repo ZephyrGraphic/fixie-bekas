@@ -61,6 +61,60 @@ const optimizations = [
   "Structured data WebSite dan Product membantu crawler memahami konteks Kai Fixie.",
 ];
 
+const personas = [
+  {
+    name: "Raka",
+    role: "Mahasiswa & commuter pendek",
+    needs: "Butuh fixie bekas yang harga jelas, bisa dicek langsung, dan tampil beda untuk dipakai ke kampus.",
+    painPoint:
+      "Sering ragu beli barang bekas karena foto kurang jelas, minus tidak ditulis, dan penjual lambat memberi detail.",
+  },
+  {
+    name: "Dina",
+    role: "Starter fixie",
+    needs: "Ingin memahami spek dasar, kondisi real, dan alur transaksi sebelum berani chat penjual.",
+    painPoint:
+      "Belum familiar dengan istilah part fixie, jadi butuh tampilan yang memisahkan spek, plus, minus, dan galeri.",
+  },
+];
+
+const userFlow = [
+  ["Awareness", "Masuk dari Google/share link dan melihat hero produk."],
+  ["Interest", "Membaca harga, ringkasan spek, dan build story."],
+  ["Trust", "Mengecek plus-minus, foto asli, bonus, dan lokasi."],
+  ["Action", "Klik WhatsApp untuk tanya detail atau atur cek barang."],
+];
+
+const designRationale = [
+  {
+    title: "Visual identity dari produk asli",
+    description:
+      "Palet maroon, pink, blue, black, dan chrome diambil dari warna sepeda agar tampilan terasa spesifik, bukan template generik.",
+  },
+  {
+    title: "CTA dibuat dominan",
+    description:
+      "Tujuan utama website adalah konversi ke WhatsApp, jadi tombol chat dibuat kontras, berulang, dan tersedia sebagai floating CTA.",
+  },
+  {
+    title: "Trust-first content",
+    description:
+      "Plus-minus, foto real, harga net, dan lokasi ditampilkan jelas untuk mengurangi keraguan pembeli barang bekas.",
+  },
+  {
+    title: "Mobile-first buying habit",
+    description:
+      "Calon pembeli kemungkinan membuka dari WhatsApp atau browser mobile, sehingga layout dibuat responsif dan CTA mudah dijangkau.",
+  },
+];
+
+const evaluationMetrics = [
+  ["Clarity", "Informasi harga, spek, kondisi, dan kontak bisa ditemukan cepat."],
+  ["Trust", "Minus dan foto asli ditampilkan terbuka untuk mengurangi rasa ragu."],
+  ["Efficiency", "Alur dari melihat produk ke chat WhatsApp dibuat pendek."],
+  ["Consistency", "Warna, komponen, dan gaya visual mengikuti identitas sepeda."],
+];
+
 export default function TentangProyek() {
   return (
     <main className="project-page">
@@ -111,6 +165,68 @@ export default function TentangProyek() {
             <li key={item}>{item}</li>
           ))}
         </ul>
+      </section>
+
+      <section className="project-page-section ux-section" aria-labelledby="ux-title">
+        <div className="project-page-heading">
+          <p className="eyebrow dark">UI/UX study</p>
+          <h2 id="ux-title">Desain dibuat dari kebutuhan pengguna, bukan hanya estetika.</h2>
+        </div>
+        <div className="persona-grid">
+          {personas.map((persona) => (
+            <article className="persona-card" key={persona.name}>
+              <span>{persona.name}</span>
+              <h3>{persona.role}</h3>
+              <p>{persona.needs}</p>
+              <small>{persona.painPoint}</small>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="project-page-section flow-study-section" aria-labelledby="ux-flow-title">
+        <div className="project-page-heading">
+          <p className="eyebrow">User flow</p>
+          <h2 id="ux-flow-title">Alur dibuat pendek dari melihat produk sampai menghubungi penjual.</h2>
+        </div>
+        <ol className="ux-flow-list">
+          {userFlow.map(([step, description]) => (
+            <li key={step}>
+              <span>{step}</span>
+              <p>{description}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="project-page-section" aria-labelledby="rationale-title">
+        <div className="project-page-heading">
+          <p className="eyebrow dark">Design rationale</p>
+          <h2 id="rationale-title">Setiap keputusan visual punya alasan UX.</h2>
+        </div>
+        <div className="rationale-grid">
+          {designRationale.map((item) => (
+            <article className="rationale-card" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="project-page-section evaluation-section" aria-labelledby="evaluation-title">
+        <div className="project-page-heading">
+          <p className="eyebrow">Evaluasi UX</p>
+          <h2 id="evaluation-title">Kriteria keberhasilan desain dapat dijelaskan saat presentasi.</h2>
+        </div>
+        <dl className="evaluation-list">
+          {evaluationMetrics.map(([label, description]) => (
+            <div key={label}>
+              <dt>{label}</dt>
+              <dd>{description}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
       <section className="project-page-section" aria-labelledby="features-title">
