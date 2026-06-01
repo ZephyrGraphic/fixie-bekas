@@ -1069,6 +1069,224 @@ h1 {
   padding-left: 12px;
 }
 
+.project-page {
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(127, 29, 47, 0.12), rgba(0, 142, 230, 0.1)),
+    var(--paper);
+}
+
+.project-hero,
+.project-page-section {
+  padding: 88px 5vw;
+}
+
+.project-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.78fr);
+  gap: 32px;
+  align-items: stretch;
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(127, 29, 47, 0.88), rgba(11, 13, 16, 0.98)),
+    var(--ink);
+}
+
+.project-hero-copy {
+  display: flex;
+  min-height: 460px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-hero h1 {
+  max-width: 11ch;
+  font-size: 68px;
+  font-weight: 950;
+}
+
+.project-hero-copy p:not(.eyebrow) {
+  max-width: 660px;
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.project-hero-media {
+  position: relative;
+  min-height: 460px;
+  margin: 0;
+  border: 3px solid rgba(255, 255, 255, 0.86);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ink);
+  box-shadow: 10px 10px 0 var(--bar-pink);
+}
+
+.project-hero-media img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-hero-media figcaption {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1;
+  border: 2px solid rgba(255, 255, 255, 0.62);
+  border-radius: 999px;
+  padding: 10px 14px;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 950;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(11, 13, 16, 0.62);
+  backdrop-filter: blur(12px);
+}
+
+.project-page-section {
+  border-top: 3px solid var(--ink);
+}
+
+.project-page-heading {
+  max-width: 860px;
+  margin-bottom: 34px;
+}
+
+.project-page-heading h2 {
+  font-size: 48px;
+  font-weight: 950;
+}
+
+.project-info-grid,
+.project-feature-list,
+.seo-page-layout {
+  display: grid;
+  gap: 18px;
+}
+
+.project-info-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-info-card,
+.project-feature-list p,
+.project-list li,
+.optimization-list p {
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.project-info-card {
+  min-height: 230px;
+  padding: 24px;
+}
+
+.project-info-card h3 {
+  font-size: 28px;
+  font-weight: 950;
+}
+
+.project-info-card p,
+.project-list li,
+.project-feature-list p,
+.optimization-list p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.project-info-card p {
+  margin: 60px 0 0;
+}
+
+.project-split-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 0.9fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.project-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li,
+.project-feature-list p,
+.optimization-list p {
+  margin: 0;
+  padding: 20px;
+}
+
+.project-feature-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tech-section {
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(255, 82, 124, 0.14) 0 24%, transparent 24% 100%),
+    linear-gradient(315deg, rgba(0, 142, 230, 0.2) 0 18%, transparent 18% 100%),
+    var(--ink);
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  border: 3px solid rgba(255, 255, 255, 0.82);
+}
+
+.tech-list div {
+  min-height: 130px;
+  border-right: 3px solid rgba(255, 255, 255, 0.82);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.82);
+  padding: 22px;
+}
+
+.tech-list div:nth-child(3n) {
+  border-right: 0;
+}
+
+.tech-list div:nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+.tech-list dt {
+  color: var(--bar-pink);
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.tech-list dd {
+  margin: 18px 0 0;
+  color: var(--white);
+  font-size: 26px;
+  font-weight: 950;
+}
+
+.seo-page-layout {
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.optimization-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .hero-content,
   .hero-dashboard,
