@@ -4,6 +4,8 @@ import fixieCockpitClose from "../assets/fixie-cockpit-close.jpg";
 import fixieSeatFork from "../assets/fixie-seat-fork.jpg";
 import fixieRearAngle from "../assets/fixie-rear-angle.jpg";
 
+export const siteUrl = "https://fixie-bekas.vercel.app";
+
 export const whatsappUrl =
   "https://wa.me/15813888740?text=Halo%2C%20aku%20minat%20Fixie%20MVNDV2%20Aero%2FGeo%20Pursuit";
 
@@ -119,6 +121,29 @@ export const dealFlow = [
     description: "Kalau cocok, langsung deal di Sakura Gardenia BLOK H21.",
   },
 ];
+
+export const productJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Fixie MVNDV2 Aero/Geo Pursuit Bekas",
+  description:
+    "Sepeda fixie MVNDV2 Aero/Geo Pursuit bekas dengan frame custom FIXFIX, wheelset platinum, ban 700x25c, dan bonus lampu depan belakang.",
+  image: [`${siteUrl}/og-image.jpg`],
+  brand: {
+    "@type": "Brand",
+    name: "MVNDV2",
+  },
+  category: "Used bicycle",
+  itemCondition: "https://schema.org/UsedCondition",
+  offers: {
+    "@type": "Offer",
+    url: siteUrl,
+    priceCurrency: "IDR",
+    price: "2000000",
+    availability: "https://schema.org/InStock",
+    areaServed: "Perumahan Sakura Gardenia BLOK H21",
+  },
+};
 
 export const specs = [
   ["Harga", "Rp 2 Juta"],

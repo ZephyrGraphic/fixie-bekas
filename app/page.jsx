@@ -9,6 +9,7 @@ import {
   gallery,
   heroStats,
   product,
+  productJsonLd,
   showcaseStats,
   specs,
   whatsappUrl,
@@ -17,6 +18,10 @@ import {
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <header className="site-header" aria-label="Navigasi utama">
         <a className="brand" href="#top" aria-label={product.brand}>
           <span className="brand-mark" aria-hidden="true" />
