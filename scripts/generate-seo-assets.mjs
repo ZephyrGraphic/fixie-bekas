@@ -31,9 +31,9 @@ const ogOverlay = Buffer.from(`
     <path d="M910 0 L1200 0 L1200 210 L1004 210 Z" fill="#008ee6" opacity="0.84"/>
     <rect x="68" y="74" width="274" height="46" rx="23" fill="#0b0d10" stroke="#ff527c" stroke-width="3"/>
     <text x="92" y="104" fill="#ff527c" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900">FIXIE BEKAS READY</text>
-    <text x="66" y="242" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="900">MVNDV2</text>
-    <text x="66" y="328" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="900">AERO/GEO</text>
-    <text x="66" y="404" fill="#d9d8d1" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Rp 2 Juta | 700x25c | Sakura Gardenia H21</text>
+    <text x="66" y="226" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="900">KAI FIXIE</text>
+    <text x="66" y="316" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="900">MVNDV2 AERO/GEO</text>
+    <text x="66" y="394" fill="#d9d8d1" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Rp 2 Juta | 700x25c | Sakura Gardenia H21</text>
     <rect x="66" y="456" width="276" height="58" rx="29" fill="url(#accent)" stroke="#0b0d10" stroke-width="4"/>
     <text x="96" y="494" fill="#0b0d10" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900">CHAT WHATSAPP</text>
   </svg>
@@ -49,8 +49,8 @@ const iconSvg = Buffer.from(`
     <rect width="512" height="512" rx="104" fill="#0b0d10"/>
     <circle cx="256" cy="256" r="170" fill="none" stroke="#7f1d2f" stroke-width="46"/>
     <circle cx="256" cy="256" r="118" fill="none" stroke="#008ee6" stroke-width="18" stroke-dasharray="58 28"/>
-    <path d="M134 334 L216 158 L256 280 L304 158 L378 334" fill="none" stroke="#ff527c" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="256" cy="256" r="26" fill="#d9d8d1"/>
+    <text x="256" y="296" text-anchor="middle" fill="#ff527c" font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="900">KF</text>
+    <circle cx="256" cy="256" r="18" fill="#d9d8d1"/>
   </svg>
 `);
 

@@ -10,18 +10,25 @@ import {
   heroStats,
   product,
   productJsonLd,
+  projectCaseStudy,
+  seoReadiness,
+  seoWins,
   showcaseStats,
   specs,
+  websiteJsonLd,
   whatsappUrl,
 } from "../data/product";
 
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-      />
+      {[websiteJsonLd, productJsonLd].map((schema) => (
+        <script
+          key={schema["@type"]}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <header className="site-header" aria-label="Navigasi utama">
         <a className="brand" href="#top" aria-label={product.brand}>
           <span className="brand-mark" aria-hidden="true" />
@@ -242,6 +249,38 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </section>
+
+        <section className="section project-section" id="project" aria-labelledby="project-title">
+          <div className="section-heading">
+            <p className="eyebrow dark">Project case study</p>
+            <h2 id="project-title">Kai Fixie diposisikan sebagai keyword dan identitas proyek.</h2>
+          </div>
+          <div className="project-layout">
+            <aside className="seo-score-card" aria-label="SEO readiness Kai Fixie">
+              <p className="eyebrow">SEO readiness</p>
+              <strong>{seoReadiness.score}</strong>
+              <h3>{seoReadiness.keyword}</h3>
+              <p>{seoReadiness.note}</p>
+            </aside>
+            <div className="project-card-grid">
+              {projectCaseStudy.map((item) => (
+                <article className="project-card" key={item.title}>
+                  <span>{item.title}</span>
+                  <p>{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+          <div className="seo-win-grid">
+            {seoWins.map((item) => (
+              <article className="seo-win-card" key={item.label}>
+                <p>{item.label}</p>
+                <strong>{item.value}</strong>
+                <span>{item.description}</span>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section className="section gallery-section" id="galeri" aria-labelledby="gallery-title">

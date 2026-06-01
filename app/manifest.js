@@ -1,9 +1,9 @@
 export default function manifest() {
   return {
-    name: "Fixie MVNDV2 Aero/Geo Pursuit Bekas",
-    short_name: "Fixie MVNDV2",
+    name: "Kai Fixie - Fixie MVNDV2 Aero/Geo Pursuit Bekas",
+    short_name: "Kai Fixie",
     description:
-      "Landing page penjualan fixie MVNDV2 Aero/Geo Pursuit bekas dengan foto asli, spek, kondisi, dan kontak WhatsApp.",
+      "Kai Fixie adalah landing page penjualan fixie MVNDV2 Aero/Geo Pursuit bekas dengan foto asli, spek, kondisi, dan kontak WhatsApp.",
     start_url: "/",
     scope: "/",
     display: "standalone",

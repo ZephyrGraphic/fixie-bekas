@@ -11,7 +11,7 @@
     "seo:assets": "node scripts/generate-seo-assets.mjs"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": "22.x"
   },
   "dependencies": {
     "next": "16.2.6",

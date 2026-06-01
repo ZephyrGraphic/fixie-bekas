@@ -1,9 +1,9 @@
 import "../styles.css";
 
 const siteUrl = "https://fixie-bekas.vercel.app";
-const title = "Fixie MVNDV2 Aero/Geo Pursuit Bekas";
+const title = "Kai Fixie | Fixie MVNDV2 Aero/Geo Pursuit Bekas";
 const description =
-  "Dijual fixie MVNDV2 Aero/Geo Pursuit bekas: frame custom FIXFIX, wheelset platinum, ban 700x25c, bonus lampu, lokasi Sakura Gardenia BLOK H21.";
+  "Kai Fixie menjual fixie MVNDV2 Aero/Geo Pursuit bekas: frame custom FIXFIX, wheelset platinum, ban 700x25c, bonus lampu, lokasi Sakura Gardenia BLOK H21.";
 
 export const viewport = {
   themeColor: "#7f1d2f",
@@ -12,13 +12,16 @@ export const viewport = {
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
-  applicationName: "Fixie Bekas MVNDV2",
+  applicationName: "Kai Fixie",
   title: {
     default: title,
-    template: "%s | Fixie Bekas MVNDV2",
+    template: "%s | Kai Fixie",
   },
   description,
   keywords: [
+    "Kai Fixie",
+    "Kai Fixie bekas",
+    "Kai Fixie MVNDV2",
     "fixie bekas",
     "sepeda fixie bekas",
     "fixie MVNDV2",
@@ -27,9 +30,9 @@ export const metadata = {
     "fixie custom FIXFIX",
     "wheelset platinum",
   ],
-  authors: [{ name: "Fixie Bekas MVNDV2" }],
-  creator: "Fixie Bekas MVNDV2",
-  publisher: "Fixie Bekas MVNDV2",
+  authors: [{ name: "Kai Fixie" }],
+  creator: "Kai Fixie",
+  publisher: "Kai Fixie",
   category: "marketplace",
   alternates: {
     canonical: "/",
@@ -55,7 +58,7 @@ export const metadata = {
     title,
     description,
     url: "/",
-    siteName: "Fixie Bekas MVNDV2",
+    siteName: "Kai Fixie",
     locale: "id_ID",
     type: "website",
     images: [
@@ -63,7 +66,7 @@ export const metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Fixie MVNDV2 Aero/Geo Pursuit bekas warna maroon",
+        alt: "Kai Fixie menjual fixie MVNDV2 Aero/Geo Pursuit bekas warna maroon",
       },
     ],
   },

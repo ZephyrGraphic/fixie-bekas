@@ -2,6 +2,8 @@
 
 Landing page Next.js untuk listing sepeda fixie MVNDV2 Aero/Geo Pursuit.
 
+Keyword SEO utama: `Kai Fixie`.
+
 ## Menjalankan Proyek
 
 ```bash
@@ -31,6 +33,8 @@ npm audit --omit=dev
 ```
 
 Catatan audit: jangan langsung menjalankan `npm audit fix --force` tanpa cek hasilnya, karena bisa mengganti versi Next/React secara agresif.
+
+Catatan SEO: keyword `Kai Fixie` sudah dipasang di metadata, konten halaman, Open Graph, manifest, dan structured data. Ranking Google tetap membutuhkan waktu indexing, kualitas konten, performa, dan sinyal eksternal seperti backlink.
 
 ## Update Konten Listing
 

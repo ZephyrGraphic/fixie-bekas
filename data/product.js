@@ -10,11 +10,12 @@ export const whatsappUrl =
   "https://wa.me/15813888740?text=Halo%2C%20aku%20minat%20Fixie%20MVNDV2%20Aero%2FGeo%20Pursuit";
 
 export const product = {
-  brand: "MVNDV2 Pursuit",
+  brand: "Kai Fixie",
   title: "MVNDV2 Aero/Geo Pursuit",
+  seoTitle: "Kai Fixie - MVNDV2 Aero/Geo Pursuit Bekas",
   eyebrow: "Fixie custom | Perumahan Sakura Gardenia BLOK H21",
   description:
-    "Fixie maroon custom by FIXFIX, wheelset platinum, ban 700x25c, dan setup dropbar buat rolling kota yang tetap kelihatan beda.",
+    "Kai Fixie menghadirkan fixie maroon custom by FIXFIX, wheelset platinum, ban 700x25c, dan setup dropbar buat rolling kota yang tetap kelihatan beda.",
   price: "Rp 2 Juta",
   netPrice: "1.8 Juta Net",
   location: "Perumahan Sakura Gardenia, BLOK H21",
@@ -122,12 +123,66 @@ export const dealFlow = [
   },
 ];
 
+export const projectCaseStudy = [
+  {
+    title: "Problem",
+    description:
+      "Listing sepeda bekas sering kurang meyakinkan karena foto, kondisi, harga, dan kontak tersebar tidak rapi.",
+  },
+  {
+    title: "Solution",
+    description:
+      "Kai Fixie dibuat sebagai landing page satu halaman yang menampilkan foto asli, spek, plus-minus, CTA WhatsApp, dan alur cek barang.",
+  },
+  {
+    title: "Impact",
+    description:
+      "Calon pembeli bisa memahami unit lebih cepat, sementara proyek tetap siap dipresentasikan sebagai studi kasus web modern.",
+  },
+];
+
+export const seoReadiness = {
+  score: "91%",
+  keyword: "Kai Fixie",
+  note:
+    "Skor ini adalah estimasi kesiapan teknis SEO, bukan jaminan ranking. Ranking Google tetap dipengaruhi umur domain, kompetisi keyword, backlink, dan perilaku pengguna.",
+};
+
+export const seoWins = [
+  {
+    label: "Keyword utama",
+    value: "Kai Fixie",
+    description: "Muncul di title, deskripsi, konten halaman, Open Graph, dan structured data.",
+  },
+  {
+    label: "Share preview",
+    value: "1200x630",
+    description: "Thumbnail siap tampil saat link dibagikan ke WhatsApp dan media sosial.",
+  },
+  {
+    label: "Indexing",
+    value: "Ready",
+    description: "Sitemap, robots, canonical URL, dan metadata sudah diarahkan ke domain Vercel.",
+  },
+];
+
+export const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Kai Fixie",
+  alternateName: ["Kai Fixie Bekas", "Kai Fixie MVNDV2", "Fixie Bekas MVNDV2"],
+  url: siteUrl,
+  description:
+    "Kai Fixie adalah landing page penjualan fixie MVNDV2 Aero/Geo Pursuit bekas dengan foto asli, spek, kondisi, harga, dan kontak WhatsApp.",
+  inLanguage: "id-ID",
+};
+
 export const productJsonLd = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Fixie MVNDV2 Aero/Geo Pursuit Bekas",
+  name: "Kai Fixie - Fixie MVNDV2 Aero/Geo Pursuit Bekas",
   description:
-    "Sepeda fixie MVNDV2 Aero/Geo Pursuit bekas dengan frame custom FIXFIX, wheelset platinum, ban 700x25c, dan bonus lampu depan belakang.",
+    "Kai Fixie menjual sepeda fixie MVNDV2 Aero/Geo Pursuit bekas dengan frame custom FIXFIX, wheelset platinum, ban 700x25c, dan bonus lampu depan belakang.",
   image: [`${siteUrl}/og-image.jpg`],
   brand: {
     "@type": "Brand",
@@ -142,6 +197,10 @@ export const productJsonLd = {
     price: "2000000",
     availability: "https://schema.org/InStock",
     areaServed: "Perumahan Sakura Gardenia BLOK H21",
+    seller: {
+      "@type": "Organization",
+      name: "Kai Fixie",
+    },
   },
 };
 
