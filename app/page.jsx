@@ -13,6 +13,7 @@ import {
   projectCaseStudy,
   seoReadiness,
   seoWins,
+  sellerLocation,
   showcaseStats,
   specs,
   websiteJsonLd,
@@ -69,6 +70,14 @@ export default function Home() {
               </a>
               <a className="button button-secondary" href="#spek">
                 Cek Spek
+              </a>
+              <a
+                className="button button-secondary"
+                href={sellerLocation.directionsUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Rute Maps
               </a>
             </div>
           </div>
@@ -193,7 +202,56 @@ export default function Home() {
               <a className="button button-panel" href={whatsappUrl}>
                 Tanya sepeda
               </a>
+              <a
+                className="button button-map"
+                href={sellerLocation.directionsUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Rute ke lokasi
+              </a>
             </aside>
+          </div>
+        </section>
+
+        <section className="section location-section" aria-labelledby="location-title">
+          <div className="location-layout">
+            <div className="location-copy">
+              <p className="eyebrow dark">{sellerLocation.label}</p>
+              <h2 id="location-title">Cek unit langsung di titik Maps seller.</h2>
+              <p>
+                Lokasi diarahkan ke {sellerLocation.name}. Buka rute sebelum berangkat,
+                lalu konfirmasi jadwal lewat WhatsApp supaya seller siap di tempat.
+              </p>
+              <div className="location-actions">
+                <a
+                  className="button button-primary"
+                  href={sellerLocation.directionsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Buka rute
+                </a>
+                <a
+                  className="button button-outline-dark"
+                  href={sellerLocation.mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Lihat maps
+                </a>
+              </div>
+              <address>{sellerLocation.address}</address>
+            </div>
+            <div className="map-frame">
+              <iframe
+                src={sellerLocation.embedUrl}
+                title={`Peta ${sellerLocation.name}`}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </section>
 
@@ -304,13 +362,21 @@ export default function Home() {
 
         <section className="final-cta" id="kontak" aria-labelledby="cta-title">
           <p className="eyebrow">Ready kalau kamu ready</p>
-          <h2 id="cta-title">Gas cek barang di Sakura Gardenia BLOK H21.</h2>
+          <h2 id="cta-title">Gas cek barang di {sellerLocation.shortAddress}.</h2>
           <p>
             Chat dulu ke WhatsApp {product.phone}, tanya detail yang belum jelas, lalu
             atur jadwal cek dan test ride.
           </p>
           <a className="button button-primary" href={whatsappUrl}>
             Chat WhatsApp
+          </a>
+          <a
+            className="button button-secondary"
+            href={sellerLocation.directionsUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Rute Maps
           </a>
         </section>
       </main>

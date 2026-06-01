@@ -13,12 +13,12 @@ export const product = {
   brand: "Kai Fixie",
   title: "MVNDV2 Aero/Geo Pursuit",
   seoTitle: "Kai Fixie - MVNDV2 Aero/Geo Pursuit Bekas",
-  eyebrow: "Fixie custom | Perumahan Sakura Gardenia BLOK H21",
+  eyebrow: "Fixie custom | SG Sakinah Grafika Cisaat Sukabumi",
   description:
     "Kai Fixie menghadirkan fixie maroon custom by FIXFIX, wheelset platinum, ban 700x25c, dan setup dropbar buat rolling kota yang tetap kelihatan beda.",
   price: "Rp 2 Juta",
   netPrice: "1.8 Juta Net",
-  location: "Perumahan Sakura Gardenia, BLOK H21",
+  location: "SG Sakinah Grafika, Jl. Arwana, Nagrak, Cisaat, Sukabumi",
   phone: "+1 (581) 388-8740",
   heroFacts: ["Rp 2 Juta", "1.8 Juta Net", "Cog 17T", "700x25c"],
   quickFacts: ["Rp 2 Juta", "Net 1.8 Juta", "Bisa cek barang", "Bonus lampu"],
@@ -27,10 +27,22 @@ export const product = {
   },
 };
 
+export const sellerLocation = {
+  label: "Titik cek barang",
+  name: "SG Sakinah Grafika",
+  address: "Jl. Arwana, Nagrak, Kec. Cisaat, Kabupaten Sukabumi, Jawa Barat 43132",
+  shortAddress: "SG Sakinah Grafika, Cisaat, Sukabumi",
+  mapsUrl: "https://maps.app.goo.gl/Xw9xGjmVuvE2fakt8",
+  directionsUrl:
+    "https://www.google.com/maps/dir//SG+Sakinah+Grafika,+Jl.+Arwana,+Nagrak,+Kec.+Cisaat,+Kabupaten+Sukabumi,+Jawa+Barat+43132/@-6.9010975,106.8854911,17z/data=!4m16!1m7!3m6!1s0x2e6837722a8ce32f:0xdaf52a3446a355df!2sSG+Sakinah+Grafika!8m2!3d-6.9010975!4d106.8854911!16s%2Fg%2F11pdym2c1r!4m7!1m0!1m5!1m1!1s0x2e6837722a8ce32f:0xdaf52a3446a355df!2m2!1d106.8855062!2d-6.9011075?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D",
+  embedUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.91224830981!2d106.8854911!3d-6.901097499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6837722a8ce32f%3A0xdaf52a3446a355df!2sSG%20Sakinah%20Grafika!5e0!3m2!1sen!2sid!4v1780316057358!5m2!1sen!2sid",
+};
+
 export const heroStats = [
   ["Harga buka", "Rp 2 Juta"],
   ["Harga net", "Rp 1.8 Juta"],
-  ["Lokasi", "Sakura H21"],
+  ["Lokasi", "Cisaat Sukabumi"],
 ];
 
 export const features = [
@@ -119,7 +131,7 @@ export const dealFlow = [
   {
     step: "Deal",
     title: "Ambil pulang",
-    description: "Kalau cocok, langsung deal di Sakura Gardenia BLOK H21.",
+    description: "Kalau cocok, langsung deal di titik SG Sakinah Grafika.",
   },
 ];
 
@@ -132,7 +144,7 @@ export const projectCaseStudy = [
   {
     title: "Solution",
     description:
-      "Kai Fixie dibuat sebagai landing page satu halaman yang menampilkan foto asli, spek, plus-minus, CTA WhatsApp, dan alur cek barang.",
+      "Kai Fixie dibuat sebagai landing page satu halaman yang menampilkan foto asli, spek, plus-minus, CTA WhatsApp, titik lokasi, dan alur cek barang.",
   },
   {
     title: "Impact",
@@ -196,7 +208,7 @@ export const productJsonLd = {
     priceCurrency: "IDR",
     price: "2000000",
     availability: "https://schema.org/InStock",
-    areaServed: "Perumahan Sakura Gardenia BLOK H21",
+    areaServed: sellerLocation.address,
     seller: {
       "@type": "Organization",
       name: "Kai Fixie",
@@ -207,7 +219,7 @@ export const productJsonLd = {
 export const specs = [
   ["Harga", "Rp 2 Juta"],
   ["Harga net", "Rp 1.8 Juta"],
-  ["Lokasi", "Sakura Gardenia BLOK H21"],
+  ["Lokasi", sellerLocation.shortAddress],
   ["Frame", "Flat besi custom FIXFIX"],
   ["Fork", "Klasik custom geo, DO mepet"],
   ["Wheelset", "Platinum 6cm/4cm"],

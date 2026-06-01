@@ -3,7 +3,7 @@ import "../styles.css";
 const siteUrl = "https://fixie-bekas.vercel.app";
 const title = "Kai Fixie | Fixie MVNDV2 Aero/Geo Pursuit Bekas";
 const description =
-  "Kai Fixie menjual fixie MVNDV2 Aero/Geo Pursuit bekas: frame custom FIXFIX, wheelset platinum, ban 700x25c, bonus lampu, lokasi Sakura Gardenia BLOK H21.";
+  "Kai Fixie menjual fixie MVNDV2 Aero/Geo Pursuit bekas: frame custom FIXFIX, wheelset platinum, ban 700x25c, bonus lampu, titik cek barang Cisaat Sukabumi.";
 
 export const viewport = {
   themeColor: "#7f1d2f",

@@ -33,7 +33,7 @@ const ogOverlay = Buffer.from(`
     <text x="92" y="104" fill="#ff527c" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900">FIXIE BEKAS READY</text>
     <text x="66" y="226" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="900">KAI FIXIE</text>
     <text x="66" y="316" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="900">MVNDV2 AERO/GEO</text>
-    <text x="66" y="394" fill="#d9d8d1" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Rp 2 Juta | 700x25c | Sakura Gardenia H21</text>
+    <text x="66" y="394" fill="#d9d8d1" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Rp 2 Juta | 700x25c | Cisaat Sukabumi</text>
     <rect x="66" y="456" width="276" height="58" rx="29" fill="url(#accent)" stroke="#0b0d10" stroke-width="4"/>
     <text x="96" y="494" fill="#0b0d10" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900">CHAT WHATSAPP</text>
   </svg>

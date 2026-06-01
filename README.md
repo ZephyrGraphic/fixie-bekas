@@ -32,6 +32,7 @@ Kai Fixie
 - Section presentasi: build story, target rider, deal flow, project case study, dan SEO readiness.
 - Detail produk lengkap: harga, lokasi, spek part, bonus, kondisi plus, dan minus jujur.
 - CTA WhatsApp langsung ke nomor penjual.
+- Embed Google Maps dan tombol rute ke titik cek barang.
 - Open Graph thumbnail untuk share link.
 - Favicon dan Apple touch icon.
 - SEO metadata, canonical URL, sitemap, robots, manifest, dan JSON-LD structured data.

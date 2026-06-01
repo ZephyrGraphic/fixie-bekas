@@ -40,6 +40,7 @@ const mainFeatures = [
   "Build story dan target rider untuk memperjelas positioning produk.",
   "Spek lengkap, kondisi plus, minus jujur, bonus, dan galeri foto.",
   "Deal flow yang menjelaskan alur chat, cek barang, test ride, dan deal.",
+  "Embed lokasi dan tombol rute Google Maps untuk membantu pembeli datang cek unit.",
   "CTA WhatsApp langsung dengan pesan siap kirim.",
 ];
 
