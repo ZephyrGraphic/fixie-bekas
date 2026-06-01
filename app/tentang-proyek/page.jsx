@@ -118,7 +118,7 @@ const evaluationMetrics = [
 export default function TentangProyek() {
   return (
     <main className="project-page">
-      <section className="project-hero" aria-labelledby="project-page-title">
+      <section className="project-hero" aria-labelledby="project-page-title" data-slide="01 / 10">
         <div className="project-hero-copy">
           <p className="eyebrow">Halaman presentasi</p>
           <h1 id="project-page-title">Tentang Proyek Kai Fixie</h1>
@@ -140,7 +140,7 @@ export default function TentangProyek() {
         </figure>
       </section>
 
-      <section className="project-page-section" aria-labelledby="goal-title">
+      <section className="project-page-section" aria-labelledby="goal-title" data-slide="02 / 10">
         <div className="project-page-heading">
           <p className="eyebrow dark">Tujuan website</p>
           <h2 id="goal-title">Dari listing biasa menjadi pengalaman jualan yang rapi.</h2>
@@ -155,7 +155,11 @@ export default function TentangProyek() {
         </div>
       </section>
 
-      <section className="project-page-section project-split-section" aria-labelledby="audience-title">
+      <section
+        className="project-page-section project-split-section"
+        aria-labelledby="audience-title"
+        data-slide="03 / 10"
+      >
         <div className="project-page-heading">
           <p className="eyebrow dark">Target pengguna</p>
           <h2 id="audience-title">Website ini dibuat untuk pembeli, bukan sekadar pajangan.</h2>
@@ -167,7 +171,7 @@ export default function TentangProyek() {
         </ul>
       </section>
 
-      <section className="project-page-section ux-section" aria-labelledby="ux-title">
+      <section className="project-page-section ux-section" aria-labelledby="ux-title" data-slide="04 / 10">
         <div className="project-page-heading">
           <p className="eyebrow dark">UI/UX study</p>
           <h2 id="ux-title">Desain dibuat dari kebutuhan pengguna, bukan hanya estetika.</h2>
@@ -184,7 +188,11 @@ export default function TentangProyek() {
         </div>
       </section>
 
-      <section className="project-page-section flow-study-section" aria-labelledby="ux-flow-title">
+      <section
+        className="project-page-section flow-study-section"
+        aria-labelledby="ux-flow-title"
+        data-slide="05 / 10"
+      >
         <div className="project-page-heading">
           <p className="eyebrow">User flow</p>
           <h2 id="ux-flow-title">Alur dibuat pendek dari melihat produk sampai menghubungi penjual.</h2>
@@ -199,7 +207,7 @@ export default function TentangProyek() {
         </ol>
       </section>
 
-      <section className="project-page-section" aria-labelledby="rationale-title">
+      <section className="project-page-section" aria-labelledby="rationale-title" data-slide="06 / 10">
         <div className="project-page-heading">
           <p className="eyebrow dark">Design rationale</p>
           <h2 id="rationale-title">Setiap keputusan visual punya alasan UX.</h2>
@@ -214,7 +222,11 @@ export default function TentangProyek() {
         </div>
       </section>
 
-      <section className="project-page-section evaluation-section" aria-labelledby="evaluation-title">
+      <section
+        className="project-page-section evaluation-section"
+        aria-labelledby="evaluation-title"
+        data-slide="07 / 10"
+      >
         <div className="project-page-heading">
           <p className="eyebrow">Evaluasi UX</p>
           <h2 id="evaluation-title">Kriteria keberhasilan desain dapat dijelaskan saat presentasi.</h2>
@@ -229,7 +241,7 @@ export default function TentangProyek() {
         </dl>
       </section>
 
-      <section className="project-page-section" aria-labelledby="features-title">
+      <section className="project-page-section" aria-labelledby="features-title" data-slide="08 / 10">
         <div className="project-page-heading">
           <p className="eyebrow dark">Fitur utama</p>
           <h2 id="features-title">Elemen yang membuat halaman ini siap jual dan siap presentasi.</h2>
@@ -241,7 +253,7 @@ export default function TentangProyek() {
         </div>
       </section>
 
-      <section className="project-page-section tech-section" aria-labelledby="tech-title">
+      <section className="project-page-section tech-section" aria-labelledby="tech-title" data-slide="09 / 10">
         <div className="project-page-heading">
           <p className="eyebrow">Teknologi</p>
           <h2 id="tech-title">Stack dibuat ringan, maintainable, dan deploy-ready.</h2>
@@ -256,7 +268,7 @@ export default function TentangProyek() {
         </dl>
       </section>
 
-      <section className="project-page-section" aria-labelledby="seo-title">
+      <section className="project-page-section" aria-labelledby="seo-title" data-slide="10 / 10">
         <div className="project-page-heading">
           <p className="eyebrow dark">SEO & performa</p>
           <h2 id="seo-title">Optimasi dilakukan dari aset, metadata, sampai structured data.</h2>

@@ -1422,6 +1422,88 @@ h1 {
   gap: 14px;
 }
 
+@media (min-width: 901px) {
+  .project-page {
+    height: 100svh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-color: var(--bar-pink) var(--ink);
+  }
+
+  .project-page::before,
+  .project-page::after {
+    position: fixed;
+    z-index: 50;
+    border: 2px solid rgba(255, 255, 255, 0.36);
+    border-radius: 999px;
+    padding: 9px 13px;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 950;
+    text-transform: uppercase;
+    background: rgba(11, 13, 16, 0.58);
+    backdrop-filter: blur(14px);
+    pointer-events: none;
+  }
+
+  .project-page::before {
+    content: "Kai Fixie UI/UX Case Study";
+    top: 18px;
+    left: 5vw;
+  }
+
+  .project-page::after {
+    content: "Scroll / Page Down";
+    right: 5vw;
+    bottom: 18px;
+  }
+
+  .project-hero,
+  .project-page-section {
+    min-height: 100svh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    position: relative;
+  }
+
+  .project-page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-hero::after,
+  .project-page-section::after {
+    content: attr(data-slide);
+    position: absolute;
+    top: 18px;
+    right: 5vw;
+    z-index: 5;
+    border: 2px solid rgba(255, 255, 255, 0.36);
+    border-radius: 999px;
+    padding: 9px 13px;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 950;
+    text-transform: uppercase;
+    background: rgba(11, 13, 16, 0.58);
+    backdrop-filter: blur(14px);
+  }
+
+  .project-page-section:not(.tech-section, .flow-study-section, .evaluation-section)::after {
+    border-color: rgba(11, 13, 16, 0.24);
+    color: var(--ink);
+    background: rgba(255, 255, 255, 0.68);
+  }
+
+  .project-hero,
+  .project-page-section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .hero-content,
   .hero-dashboard,
